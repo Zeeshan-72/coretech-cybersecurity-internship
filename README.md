@@ -6,7 +6,7 @@
 
 **Education:** BS Computer Science
 
-**City:** [Rawalpindi]
+**City:** Rawalpindi
 
 **Skills:** Java, Android Development, SQL, Web Development
 
