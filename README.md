@@ -43,3 +43,11 @@ Ethical hacking is the authorized process of identifying and fixing security vul
 ## How Cybersecurity Helps CoreTech Innovation
 
 Cybersecurity protects sensitive data, prevents attacks, maintains customer trust, and ensures business continuity.
+
+## Setup Screenshots
+
+### GitHub Dashboard
+![Dashboard](dashboard.png)
+
+### README Page
+![README](readme.png)
