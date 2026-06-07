@@ -1,8 +1,4 @@
-<img width="196" height="18" alt="ls" src="https://github.com/user-attachments/assets/5034dee9-5642-44ae-ab3e-e89560a0366f" />
-<img width="928" height="215" alt="ls-la" src="https://github.com/user-attachments/assets/f0d4aa01-a715-4b9b-9ecc-5d64fc04a5ac" />
-<img width="236" height="62" alt="mkdir" src="https://github.com/user-attachments/assets/dd305ece-2163-4cbf-a064-f1308e2e8a54" />
-<img width="960" height="486" alt="readme" src="https://github.com/user-attachments/assets/7fffb4c1-1d93-4e8a-9ca3-aa8aa29db802" />
-<img width="191" height="25" alt="pwd" src="https://github.com/user-attachments/assets/619ef2c7-8fbb-44bd-9215-7b98bdfb5e8b" />
+
 # Task 3: Linux Basics for Cybersecurity
 
 This task covers basic Linux commands used in cybersecurity.
