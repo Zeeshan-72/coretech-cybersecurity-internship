@@ -89,31 +89,31 @@ dig example.com
 
 site:example.com
 
-![Google Dork 1](google-dork1.png)
+![Google Dork 1](dork1.png)
 
 ## Example 2
 
 site:example.com filetype:pdf
 
-![Google Dork 2](google-dork2.png)
+![Google Dork 2](dork2.png)
 
 ## Example 3
 
 site:example.com intitle:index.of
 
-![Google Dork 3](google-dork3.png)
+![Google Dork 3](dork3.png)
 
 ## Example 4
 
 site:example.com inurl:admin
 
-![Google Dork 4](google-dork4.png)
+![Google Dork 4](dork4.png)
 
 ## Example 5
 
 site:example.com filetype:txt
 
-![Google Dork 5](google-dork5.png)
+![Google Dork 5](dork5.png)
 
 ---
 
