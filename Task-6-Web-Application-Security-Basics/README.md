@@ -163,6 +163,13 @@ SSRF occurs when a server fetches attacker-controlled URLs.
 ```
 http://localhost/admin
 ```
+# OWASP Top 10 Vulnerabilities
+
+## Screenshot
+
+![OWASP Top 10 Part 1](owasp-top10-1.png)
+
+![OWASP Top 10 Part 2](owasp-top10-2.png)
 
 ### Prevention
 - URL validation
@@ -314,9 +321,6 @@ DVWA (Damn Vulnerable Web Application)
 
 ![DVWA Home](dvwa-home.png)
 
-![SQL Injection Practice](sql-injection.png)
-
-![XSS Practice](xss-demo.png)
 
 ---
 
