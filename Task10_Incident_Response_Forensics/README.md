@@ -7,9 +7,20 @@
 
 ---
 
-# Introduction
+# Project Overview
 
-This project demonstrates the concepts of Incident Response and Digital Forensics. It covers the Incident Response Lifecycle, a ransomware incident response plan, digital forensics fundamentals, forensic imaging using FTK Imager, log analysis, SIEM concepts, and a post-incident report template.
+This project demonstrates the concepts of Incident Response and Digital Forensics. It includes the Incident Response Lifecycle, a ransomware incident response plan for CoreTech Innovation, digital forensics fundamentals, forensic imaging using FTK Imager, log analysis, SIEM concepts, and a post-incident report template.
+
+---
+
+# Objectives
+
+- Understand the Incident Response Lifecycle
+- Develop a Ransomware Incident Response Plan
+- Learn Digital Forensics Fundamentals
+- Perform Forensic Imaging using FTK Imager
+- Understand Log Analysis and SIEM Systems
+- Create a Post-Incident Report Template
 
 ---
 
@@ -17,27 +28,27 @@ This project demonstrates the concepts of Incident Response and Digital Forensic
 
 ## 1. Preparation
 
-Preparation involves creating policies, procedures, backups, and security awareness training before an incident occurs.
+Preparation involves establishing security policies, creating backups, configuring security tools, and training employees before incidents occur.
 
 ## 2. Detection and Analysis
 
-Identify suspicious activities and determine whether a security incident has occurred.
+Security incidents are identified through alerts, monitoring systems, and log analysis.
 
 ## 3. Containment
 
-Limit the spread of the attack by isolating affected systems.
+The affected systems are isolated to prevent further damage and stop the attack from spreading.
 
 ## 4. Eradication
 
-Remove malware and eliminate the root cause of the incident.
+The root cause of the incident is removed, including malware and vulnerabilities.
 
 ## 5. Recovery
 
-Restore systems and services from backups.
+Systems and services are restored from backups and returned to normal operations.
 
 ## 6. Lessons Learned
 
-Review the incident and improve future security measures.
+The incident is reviewed to improve future security measures and response procedures.
 
 ---
 
@@ -56,26 +67,26 @@ CoreTech Innovation experiences a ransomware attack that encrypts company files 
 ### Containment
 
 - Disconnect infected devices
-- Disable network shares
-- Block malicious communications
+- Disable shared folders
+- Block malicious network connections
 
 ### Eradication
 
 - Remove ransomware
 - Patch vulnerabilities
-- Reset compromised credentials
+- Reset compromised passwords
 
 ### Recovery
 
-- Restore data from backups
+- Restore files from backups
 - Verify system integrity
-- Resume normal operations
+- Resume business operations
 
 ### Lessons Learned
 
-- Conduct incident review
-- Update policies
-- Improve employee training
+- Review attack methods
+- Improve security awareness
+- Update incident response procedures
 
 ---
 
@@ -87,13 +98,13 @@ Digital evidence may include:
 
 - Hard Drives
 - USB Devices
-- Log Files
 - Emails
+- System Logs
 - Memory Dumps
 
 ## Chain of Custody
 
-Chain of custody records every individual who handled the evidence.
+Chain of custody documents every person who handles digital evidence.
 
 ### Importance
 
@@ -103,13 +114,13 @@ Chain of custody records every individual who handled the evidence.
 
 ## Disk Imaging
 
-Disk imaging creates an exact copy of digital evidence for analysis.
+Disk imaging creates an exact copy of digital evidence for forensic analysis.
 
 ### Benefits
 
 - Preserves original evidence
-- Enables safe analysis
-- Verifies integrity using hashes
+- Enables safe investigation
+- Verifies integrity using hash values
 
 ---
 
@@ -117,76 +128,78 @@ Disk imaging creates an exact copy of digital evidence for analysis.
 
 ## Objective
 
-To create a forensic image from sample evidence and verify its integrity.
-
-## Sample Evidence Files
-
-- secret.txt
-- passwords.txt
-- notes.txt
+To create and verify a forensic image using FTK Imager.
 
 ---
 
-# FTK Imager Home Screen
+## FTK Imager Home Screen
 
 The following screenshot shows FTK Imager after successful installation.
 
-![FTK Home](screenshots/ftk_home.png)
+![FTK Home](ftk_home.png)
 
 ---
 
-# Source Selection
+## Source Selection
 
 The evidence source was selected using the "Contents of a Folder" option.
 
-![Source Selection](screenshots/source_selection.png)
+![Source Selection](source_selection.png)
 
 ---
 
-# Destination Configuration
+## Imaging Process
 
-The forensic image destination was configured successfully.
+FTK Imager successfully created a forensic image from the evidence folder.
 
-![Destination Added](screenshots/destination_added.png)
-
----
-
-# Imaging Process
-
-FTK Imager successfully created a forensic image of the evidence folder.
-
-![Imaging Process](screenshots/imaging_process.png)
+![Imaging Process](imaging_process.png)
 
 ---
 
-# Verification Results
+## Verification Results
 
-The generated forensic image was verified using MD5 and SHA1 hashes.
+The generated forensic image was verified using MD5 and SHA1 hash values.
 
-Verification Result: **Match**
+### Verification Result
 
-![Verification Results](screenshots/imaging_complete.png)
+- MD5 Hash: Match
+- SHA1 Hash: Match
+
+This confirms that the forensic image is an exact copy of the original evidence and that no data was altered during the imaging process.
+
+![Verification Results](imaging_complete.png)
+
+---
+
+## Findings
+
+- FTK Imager installed successfully.
+- Sample evidence files were created.
+- Forensic image generated successfully.
+- MD5 hash verification passed.
+- SHA1 hash verification passed.
+- Evidence integrity maintained.
 
 ---
 
 # Log Analysis
 
-Log analysis is the process of reviewing system logs to identify suspicious activity.
+Log analysis is the process of reviewing logs to identify suspicious activities and security incidents.
 
 ## Common Log Sources
 
 - Windows Event Logs
 - Firewall Logs
 - Web Server Logs
-- Authentication Logs
 - Application Logs
+- Authentication Logs
 
-### Benefits
+## Benefits
 
-- Detect security incidents
+- Detect attacks
 - Monitor user activity
-- Investigate attacks
-- Improve security visibility
+- Investigate incidents
+- Improve security
 
 ---
 
@@ -198,9 +211,9 @@ SIEM systems collect and analyze security events from multiple sources.
 
 - Log Collection
 - Event Correlation
+- Real-Time Monitoring
 - Alert Generation
 - Incident Investigation
-- Compliance Reporting
 
 ## Popular SIEM Tools
 
@@ -209,20 +222,21 @@ SIEM systems collect and analyze security events from multiple sources.
 - Microsoft Sentinel
 - Elastic Security
 
-### Benefits
+## Benefits
 
 - Centralized monitoring
 - Faster incident response
-- Improved visibility
+- Improved security visibility
 - Better compliance management
 
 ---
 
 # Post-Incident Report Template
 
-The project includes a reusable post-incident report template containing:
+The repository includes a reusable post-incident report template containing:
 
 - Incident Information
+- Incident Summary
 - Timeline
 - Impact Assessment
 - Root Cause Analysis
@@ -232,31 +246,25 @@ The project includes a reusable post-incident report template containing:
 
 ---
 
-# Repository Structure
+# Repository Files
 
 ```text
-Task10-Incident-Response-Forensics
-│
-├── README.md
-├── Incident_Response_Lifecycle.md
-├── CoreTech_Ransomware_Response_Plan.md
-├── Digital_Forensics_Basics.md
-├── FTK_Imager_Practice.md
-├── Log_Analysis_and_SIEM.md
-├── Post_Incident_Report_Template.md
-│
-└── screenshots
-    ├── ftk_home.png
-    ├── source_selection.png
-    ├── destination_added.png
-    ├── imaging_process.png
-    └── imaging_complete.png
+README.md
+Incident_Response_Lifecycle.md
+CoreTech_Ransomware_Response_Plan.md
+Digital_Forensics_Basics.md
+FTK_Imager_Practice.md
+Log_Analysis_and_SIEM.md
+Post_Incident_Report_Template.md
+
+ftk_home.png
+source_selection.png
+imaging_process.png
+imaging_complete.png
 ```
 
 ---
 
 # Conclusion
 
-This project successfully demonstrated Incident Response and Digital Forensics concepts through both theoretical explanations and practical forensic imaging using FTK Imager. The generated forensic image was successfully verified using MD5 and SHA1 hash values, confirming evidence integrity and authenticity.
-
----
+This project successfully demonstrated Incident Response and Digital Forensics concepts through both theoretical explanations and practical forensic imaging using FTK Imager. The forensic image was successfully verified using MD5 and SHA1 hashes, confirming evidence integrity and authenticity.
