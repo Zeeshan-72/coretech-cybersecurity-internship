@@ -1,284 +1,169 @@
-# Final Cybersecurity Project Development
+# Web Application Security Testing Report
+## CoreTech Innovation Internship - Task 11
 
-## Project Title
-Web Application Security Testing Report Using OWASP Methodology
+### Project Overview
 
-## Organization
-CoreTech Innovation
+This project demonstrates a basic Web Application Security Assessment using the OWASP Web Security Testing Guide (WSTG) methodology.
 
----
-
-# Project Overview
-
-This project demonstrates a Web Application Security Assessment using OWASP Methodology. The assessment identifies common security vulnerabilities, evaluates associated risks, and provides recommendations to improve the overall security posture of CoreTech Innovation's web application.
+The objective of this assessment is to identify common web application security weaknesses, evaluate risks, and provide recommendations to improve the security posture of the application.
 
 ---
 
 # Objectives
 
-- Understand OWASP Testing Methodology
-- Perform Web Application Security Testing
-- Identify Security Vulnerabilities
-- Assign Risk Ratings
-- Provide Security Recommendations
-- Document Findings and Results
+- Understand OWASP Web Security Testing Methodology
+- Perform basic web application security assessment
+- Identify potential vulnerabilities
+- Analyze security headers
+- Document findings and recommendations
+- Produce a professional security assessment report
 
 ---
 
-# Scope of Assessment
+# Scope
 
-The following areas were included in the security assessment:
+The assessment focuses on:
 
-## Authentication Testing
-
-- Login Functionality
-- Password Security
-- Account Protection
-
-## Authorization Testing
-
-- User Roles
-- Access Controls
-- Privilege Management
-
-## Session Management Testing
-
-- Session Security
-- Cookie Security
-- Session Expiration
-
-## Input Validation Testing
-
-- SQL Injection
-- Cross-Site Scripting (XSS)
-- Form Validation
-
-## Security Configuration Testing
-
-- Security Headers
-- Error Handling
-- Information Disclosure
+- Information Gathering
+- Configuration Testing
+- Authentication Testing
+- Authorization Testing
+- Input Validation Testing
+- Session Management Testing
+- Security Header Analysis
 
 ---
 
-# OWASP Testing Methodology
+# Methodology
 
-## Phase 1: Information Gathering
+This assessment follows the OWASP Web Security Testing Guide (WSTG).
 
-Identify application functionality and attack surface.
+### Testing Phases
 
-### Activities
-
-- Website Mapping
-- Technology Identification
-- Entry Point Discovery
-
----
-
-## Phase 2: Configuration Testing
-
-Review web server and application configurations.
-
-### Activities
-
-- Security Header Inspection
-- Error Message Analysis
-- Configuration Review
+1. Information Gathering
+2. Configuration and Deployment Management Testing
+3. Authentication Testing
+4. Authorization Testing
+5. Session Management Testing
+6. Input Validation Testing
+7. Security Misconfiguration Testing
+8. Reporting and Recommendations
 
 ---
 
-## Phase 3: Authentication Testing
+# Risk Rating Scale
 
-Evaluate login and authentication mechanisms.
-
-### Activities
-
-- Password Policy Review
-- Login Security Testing
-- Credential Security Checks
-
----
-
-## Phase 4: Authorization Testing
-
-Verify access control mechanisms.
-
-### Activities
-
-- User Role Testing
-- Privilege Escalation Checks
-- Access Restriction Verification
-
----
-
-## Phase 5: Input Validation Testing
-
-Analyze application inputs for vulnerabilities.
-
-### Activities
-
-- SQL Injection Testing
-- Cross-Site Scripting Testing
-- Input Sanitization Review
-
----
-
-## Phase 6: Session Management Testing
-
-Review session handling mechanisms.
-
-### Activities
-
-- Cookie Inspection
-- Session Timeout Testing
-- Session Fixation Checks
+| Risk Level | Description |
+|------------|------------|
+| Critical | Immediate exploitation possible with severe impact |
+| High | Significant security weakness requiring urgent action |
+| Medium | Moderate risk requiring remediation |
+| Low | Minor security concern |
+| Informational | No immediate risk |
 
 ---
 
 # Findings
 
-## Finding 1: Missing Security Headers
-
-### Risk Level
-Medium
+## Finding 1: Missing Content Security Policy
 
 ### Description
 
-Several important HTTP Security Headers were missing.
+The application does not implement a Content Security Policy (CSP).
 
-### Missing Headers
+### Risk Level
 
-- Content-Security-Policy
-- X-Frame-Options
-- X-Content-Type-Options
+Medium
 
 ### Impact
 
-Attackers may exploit browser-based vulnerabilities.
+Without CSP, the application may be more vulnerable to Cross-Site Scripting (XSS) attacks.
+
+### Recommendation
+
+Implement a strict Content Security Policy to control allowed content sources.
 
 ---
 
-## Finding 2: Weak Password Policy
-
-### Risk Level
-Medium
+## Finding 2: Missing X-Content-Type-Options Header
 
 ### Description
 
-Users can create weak passwords.
+The X-Content-Type-Options header is not configured.
+
+### Risk Level
+
+Medium
 
 ### Impact
 
-Increased risk of brute-force attacks and account compromise.
+Browsers may perform MIME-type sniffing, increasing attack surface.
+
+### Recommendation
+
+Configure:
+
+```http
+X-Content-Type-Options: nosniff
+```
 
 ---
 
-## Finding 3: Information Disclosure
+## Finding 3: Missing Referrer Policy
+
+### Description
+
+The Referrer Policy header is absent.
 
 ### Risk Level
+
 Low
 
-### Description
-
-Detailed error messages expose technical information.
-
 ### Impact
 
-Attackers may gather information useful for future attacks.
+Sensitive information may be leaked through referrer headers.
+
+### Recommendation
+
+Configure:
+
+```http
+Referrer-Policy: strict-origin-when-cross-origin
+```
 
 ---
 
-# Risk Ratings
+# Security Header Assessment
 
-| Vulnerability | Risk Rating |
-|--------------|-------------|
-| Missing Security Headers | Medium |
-| Weak Password Policy | Medium |
-| Information Disclosure | Low |
+## Present Security Headers
+
+- Strict-Transport-Security
+- Permissions-Policy
+- X-Frame-Options
+
+## Missing Security Headers
+
+- Content-Security-Policy
+- X-Content-Type-Options
+- Referrer-Policy
 
 ---
 
 # Recommendations
 
-## Implement Security Headers
-
-Add:
-
-- Content-Security-Policy
-- X-Frame-Options
-- X-Content-Type-Options
-- Strict-Transport-Security
-
----
-
-## Improve Password Policy
-
-Require:
-
-- Minimum 12 Characters
-- Uppercase Letters
-- Lowercase Letters
-- Numbers
-- Special Characters
+1. Implement Content Security Policy (CSP)
+2. Enable X-Content-Type-Options
+3. Configure Referrer Policy
+4. Perform regular vulnerability assessments
+5. Conduct periodic penetration testing
+6. Keep software and dependencies updated
+7. Enforce secure coding practices
 
 ---
 
-## Improve Error Handling
+# Conclusion
 
-Replace detailed system errors with generic messages.
-
-### Current
-
-Database connection failed on localhost.
-
-### Recommended
-
-An unexpected error occurred. Please try again later.
-
----
-
-## Strengthen Session Security
-
-Implement:
-
-- Secure Cookies
-- HttpOnly Cookies
-- Session Timeout
-- Multi-Factor Authentication
-
----
-
-# Security Best Practices
-
-## Employee Awareness Training
-
-Topics:
-
-- Phishing Attacks
-- Password Security
-- Social Engineering
-- Safe Internet Usage
-
----
-
-## Regular Security Assessments
-
-Perform:
-
-- Vulnerability Assessments
-- Penetration Testing
-- Security Audits
-
----
-
-## Patch Management
-
-Regularly update:
-
-- Operating Systems
-- Web Servers
-- Frameworks
-- Third-Party Libraries
+The assessment identified several missing security headers that may expose the application to security risks. While some important protections are already implemented, additional hardening measures should be applied to improve the overall security posture.
 
 ---
 
@@ -286,49 +171,43 @@ Regularly update:
 
 ## OWASP Methodology
 
-![OWASP Testing](screenshots/owasp_testing.png)
+The OWASP Web Security Testing Guide was used as the primary testing methodology.
+
+![OWASP Testing](Owasp%20Testing.png)
 
 ---
 
 ## Security Testing Process
 
-![Testing Process](screenshots/testing_process.png)
+The following process was followed during the assessment.
+
+![Testing Process](Testing%20Process.png)
 
 ---
 
 ## Findings Evidence
 
-![Findings](screenshots/findings.png)
+Security header analysis results showing implemented and missing security headers.
+
+![Findings](Findings.png)
 
 ---
 
-# Conclusion
+# Tools Used
 
-The assessment identified several weaknesses that could impact the confidentiality, integrity, and availability of the application.
-
-The most significant findings were missing security headers and weak password policies. Implementing the recommendations provided in this report will significantly improve the security posture of CoreTech Innovation's web application.
-
----
-
-# Repository Structure
-
-```text
-Task11-Web-Application-Security-Testing
-│
-├── README.md
-│
-└── screenshots
-    ├── owasp_testing.png
-    ├── testing_process.png
-    └── findings.png
-```
+- OWASP Web Security Testing Guide (WSTG)
+- SecurityHeaders.com
+- Web Browser Developer Tools
+- GitHub
 
 ---
 
 # Author
 
-Zeeshan Haider
+**Zeeshan Haider**
 
-CoreTech Innovation Internship Program
+CoreTech Innovation Internship
 
-Final Cybersecurity Project Development
+Cybersecurity Internship Program
+
+2026
