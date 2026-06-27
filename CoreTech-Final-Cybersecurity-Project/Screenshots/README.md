@@ -4,7 +4,7 @@
 
 This folder contains screenshots collected during the cybersecurity assessment of the CoreTech Innovation web application.
 
-The screenshots provide visual evidence of the testing methodology, assessment process, and findings. They support the documentation presented in the final project report.
+These screenshots provide visual evidence supporting the findings documented in the project report.
 
 ---
 
@@ -12,13 +12,11 @@ The screenshots provide visual evidence of the testing methodology, assessment p
 
 ## Description
 
-The OWASP Web Security Testing Guide (WSTG) was used as the primary methodology for conducting the security assessment.
-
-It provides industry-recognized best practices for testing the security of web applications.
+The OWASP Web Security Testing Guide (WSTG) was used as the primary methodology throughout this project. It provides industry-recognized guidance for assessing the security of web applications.
 
 ### Screenshot
 
-![OWASP Testing](Owasp%20Testing.png)
+![OWASP Web Security Testing Guide](Owasp%20Testing.png)
 
 ---
 
@@ -26,33 +24,37 @@ It provides industry-recognized best practices for testing the security of web a
 
 ## Description
 
-The following workflow was followed throughout the assessment:
+The following workflow illustrates the methodology used during the assessment.
+
+### Testing Workflow
 
 1. Information Gathering
-2. Reconnaissance
-3. Security Header Analysis
-4. SSL/TLS Review
-5. Risk Assessment
-6. Documentation
-7. Reporting
+2. Configuration Testing
+3. Authentication Testing
+4. Authorization Testing
+5. Input Validation Testing
+6. Session Management Testing
+7. Reporting and Findings
 
 ### Screenshot
 
-![Testing Process](Testing%20Process.png)
+![Security Testing Process](Testing%20Process.png)
 
 ---
 
-# Screenshot 3 – Security Header Analysis Findings
+# Screenshot 3 – Security Header Analysis
 
 ## Description
 
-The HTTP Security Header analysis identified implemented and missing security headers.
+The website's HTTP security headers were analyzed to identify implemented and missing browser security protections.
+
+### Observations
 
 ### Implemented Headers
 
 - Strict-Transport-Security
-- Permissions-Policy
 - X-Frame-Options
+- Permissions-Policy
 
 ### Missing Headers
 
@@ -60,23 +62,32 @@ The HTTP Security Header analysis identified implemented and missing security he
 - Referrer-Policy
 - X-Content-Type-Options
 
-### Overall Security Rating
+### Security Rating
 
-**Grade: C**
+**Overall Grade: C**
 
 ### Screenshot
 
-![Findings](Findings.png)
+![Security Header Analysis](Findings.png)
 
 ---
 
 # Summary
 
-The screenshots included in this folder provide supporting evidence for the findings presented in the assessment report. They demonstrate the application of OWASP methodology and the identification of web application security issues.
+The screenshots included in this folder provide evidence for the assessment activities and support the findings presented in the final report. They demonstrate the application of the OWASP methodology and the evaluation of browser security configurations.
 
 ---
 
-# Prepared By
+# Related Documents
+
+- Main Project Report
+- Findings Report
+- Risk Assessment
+- Recommendations
+
+---
+
+# Author
 
 **Zeeshan Haider**
 
