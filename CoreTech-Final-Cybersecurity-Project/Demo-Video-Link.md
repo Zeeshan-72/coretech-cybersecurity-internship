@@ -2,7 +2,7 @@
 
 ## Project Demonstration
 
-A 3–5 minute demonstration video has been prepared to explain the cybersecurity project.
+A 3–5 minute demonstration video has been prepared to explain the complete cybersecurity project.
 
 The demonstration includes:
 
@@ -12,7 +12,7 @@ The demonstration includes:
 - Scope and Objectives
 - OWASP Testing Methodology
 - Security Testing Process
-- Findings
+- Security Findings
 - Risk Assessment
 - Recommendations
 - Conclusion
@@ -22,63 +22,62 @@ The demonstration includes:
 
 # Demo Video Link
 
-> **Video Link:**
+**OneDrive Video:**
 
-Paste your Google Drive or YouTube video link here after uploading the recording.
-
-Example:
-
-https://drive.google.com/file/d/xxxxxxxxxxxxxxxx/view
-
-OR
-
-https://youtu.be/xxxxxxxxxxx
+https://1drv.ms/v/c/38045fac0f7b39a8/IQD1GaPYuOUrQaDkaG7X7xTTAf1in9jwEmtY3KJDD-6Y69A?e=0oAQ7B
 
 ---
 
 # Video Description
 
-The demonstration explains the complete Web Application Security Testing Report prepared for CoreTech Innovation using the OWASP Web Security Testing Guide (WSTG).
+This demonstration explains the **CoreTech Final Cybersecurity Project**, which focuses on performing a Web Application Security Assessment using the **OWASP Web Security Testing Guide (WSTG)**.
 
-The report covers:
+The video covers:
 
-- Security assessment methodology
-- Testing process
-- Security findings
-- Risk analysis
-- Recommendations
-- Final conclusion
+- Project introduction
+- Repository structure
+- Executive Summary
+- Scope and Objectives
+- OWASP Testing Methodology
+- Security Testing Process
+- Security Findings with Risk Ratings
+- Risk Assessment
+- Remediation Recommendations
+- Project Conclusion
+- Screenshots and Supporting Evidence
 
 ---
 
 # Recording Checklist
 
-Before submitting, make sure your video includes:
+The demonstration includes the following sections:
 
-- Introduction
-- Project objective
-- Repository structure
-- Explanation of report sections
-- Methodology
-- Findings
-- Risk ratings
-- Recommendations
-- Screenshots
-- Conclusion
+- ✅ Introduction
+- ✅ Project Objectives
+- ✅ Repository Structure
+- ✅ Executive Summary
+- ✅ Scope
+- ✅ OWASP Methodology
+- ✅ Security Testing Process
+- ✅ Findings
+- ✅ Risk Ratings
+- ✅ Recommendations
+- ✅ Conclusion
+- ✅ Screenshots and Evidence
 
 ---
 
 # Submission
 
-Submit the following:
+The following deliverables are included:
 
-- GitHub Repository Link
-- Demo Video Link
-
-Both links should be included in the internship portal submission.
+- GitHub Repository
+- Final Project Report
+- Screenshots and Evidence
+- Demo Video
 
 ---
 
 # Notes
 
-The video is created for educational purposes as part of the CoreTech Cybersecurity Internship Final Project.
+This project was completed as part of the **CoreTech Cybersecurity Internship Final Project**. The assessment follows the **OWASP Web Security Testing Guide (WSTG)** and demonstrates the methodology, findings, risk analysis, and remediation recommendations in an ethical cybersecurity testing environment.
